@@ -28,27 +28,27 @@
         </div>
         <ul class="has-text-right-desktop">
           <li>
-            <a href="https://www.instagram.com/longlivesimple">
+            <a href="https://www.instagram.com/longlivesimple" aria-label="Instagram">
               <img src="/img/icons/instagram-icon.svg" class="image is-32x32" alt="Instagram Icon">
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/longlivesimple">
+            <a href="https://www.facebook.com/longlivesimple" aria-label="Facebook">
               <img src="/img/icons/facebook-icon.svg" class="image is-32x32" alt="Facebook Icon">
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com/longlivesimple">
+            <a href="https://www.twitter.com/longlivesimple" aria-label="Twitter">
               <img src="/img/icons/twitter-icon.svg" class="image is-32x32" alt="Twitter Icon">
             </a>
           </li>
           <li>
-            <a href="https://www.pinterest.com/longlivesimple">
+            <a href="https://www.pinterest.com/longlivesimple" aria-label="Pinterest">
               <img src="/img/icons/pinterest-icon.svg" class="image is-32x32" alt="Pinterest Icon">
             </a>
           </li>
           <li>
-            <a href="https://www.dribbble.com/longlivesimple">
+            <a href="https://www.dribbble.com/longlivesimple" aria-label="Dribbble">
               <img src="/img/icons/dribbble-icon.svg" class="image is-32x32" alt="Dribble Icon">
             </a>
           </li>

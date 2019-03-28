@@ -177,18 +177,18 @@
               <div class="field is-horizontal">
                 <div class="field-body">
                   <div class="field">
-                    <label class="is-invisible" style="position: absolute; transform: translateX(-9000px);">Name</label>
+                    <label class="is-invisible" for="news-name" style="position: absolute; transform: translateX(-9000px);">Name</label>
                     <p class="control is-expanded has-icons-left">
-                      <input class="input" type="text" placeholder="Name" name="u" value>
+                      <input class="input" type="text" placeholder="Name" name="u" value id="news-name" required>
                       <span class="icon is-small is-left">
                         <i class="mdi mdi-account"></i>
                       </span>
                     </p>
                   </div>
                   <div class="field">
-                    <label class="is-invisible" style="position: absolute; transform: translateX(-9000px);">Email</label>
+                    <label class="is-invisible" for="news-email" style="position: absolute; transform: translateX(-9000px);">Email</label>
                     <p class="control is-expanded has-icons-left">
-                      <input class="input" type="email" placeholder="Email" name="id" value>
+                      <input class="input" type="email" placeholder="Email" name="id" value id="news-email" required>
                       <span class="icon is-small is-left">
                         <i class="mdi mdi-email"></i>
                       </span>

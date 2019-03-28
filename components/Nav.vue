@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar is-transparent">
     <div class="navbar-brand">
-      <nuxt-link class="navbar-logo__link navbar-item" to="/">
+      <nuxt-link class="navbar-logo__link navbar-item" to="/" aria-label="Long Live Simple">
         <svg
           class="navbar-logo"
           width="548"
@@ -110,7 +110,7 @@
     <div id="mainNav" class="navbar-menu" :class="{'is-active': localIsOpen}">
       <div class="navbar-start">
         <!--Map this to Vue-Router-->
-        <nuxt-link to="/work" class="navbar-item is-tab nav-icon">
+        <nuxt-link to="/work" class="navbar-item is-tab nav-icon" aria-label="Work">
           <figure class="nav-icon__icon">
             <svg
               class="nav-icon__svg"
@@ -149,7 +149,7 @@
           </figure>
           <span class="nav-icon__text">Work</span>
         </nuxt-link>
-        <nuxt-link to="/about" class="navbar-item is-tab nav-icon">
+        <nuxt-link to="/about" class="navbar-item is-tab nav-icon" aria-label="About">
           <figure class="nav-icon__icon">
             <svg
               class="nav-icon__svg"
@@ -176,7 +176,7 @@
           </figure>
           <span class="nav-icon__text">About</span>
         </nuxt-link>
-        <nuxt-link to="/services" class="navbar-item is-tab nav-icon">
+        <nuxt-link to="/services" class="navbar-item is-tab nav-icon" aria-label="Services">
           <figure class="nav-icon__icon">
             <svg
               class="nav-icon__svg"
@@ -207,7 +207,7 @@
           </figure>
           <span class="nav-icon__text">Services</span>
         </nuxt-link>
-        <nuxt-link to="/contact" class="navbar-item is-tab nav-icon">
+        <nuxt-link to="/contact" class="navbar-item is-tab nav-icon" aria-label="Contact">
           <figure class="nav-icon__icon">
             <svg
               class="nav-icon__svg"
@@ -244,30 +244,31 @@
         <a
           href="https://www.instagram.com/longlivesimple"
           class="navbar-item is-tab is-paddingless"
+          aria-label="Instagram"
         >
           <figure class="image is-32x32">
             <img src="/img/icons/instagram-icon.svg" alt="Instagram Icon">
           </figure>
         </a>
-        <a href="https://www.facebook.com/longlivesimple" class="navbar-item is-tab is-paddingless">
+        <a href="https://www.facebook.com/longlivesimple" class="navbar-item is-tab is-paddingless" aria-label="Facebook">
           <figure class="image is-32x32">
             <img src="/img/icons/facebook-icon.svg" alt="Facebook Icon">
           </figure>
         </a>
-        <a href="https://www.twitter.com/longlivesimple" class="navbar-item is-tab is-paddingless">
+        <a href="https://www.twitter.com/longlivesimple" class="navbar-item is-tab is-paddingless" aria-label="Twitter">
           <figure class="image is-32x32">
             <img src="/img/icons/twitter-icon.svg" alt="Twitter Icon">
           </figure>
         </a>
         <a
           href="https://www.pinterest.com/longlivesimple"
-          class="navbar-item is-tab is-paddingless"
+          class="navbar-item is-tab is-paddingless" aria-label="Pinterest"
         >
           <figure class="image is-32x32">
             <img src="/img/icons/pinterest-icon.svg" alt="Pinterest Icon">
           </figure>
         </a>
-        <a href="https://www.dribbble.com/longlivesimple" class="navbar-item is-tab is-paddingless">
+        <a href="https://www.dribbble.com/longlivesimple" class="navbar-item is-tab is-paddingless" aria-label="Dribbble">
           <figure class="image is-32x32">
             <img src="/img/icons/dribbble-icon.svg" alt="Dribble Icon">
           </figure>

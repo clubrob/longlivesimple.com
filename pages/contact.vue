@@ -37,13 +37,15 @@
               method="POST"
             >
               <div class="field">
-                <label class="label has-text-left">Name</label>
+                <label class="label has-text-left" for="contact-name">Name</label>
                 <div class="control has-icons-left">
                   <input
                     class="input is-primary"
                     type="text"
                     name="name"
+                    id="contact-name"
                     placeholder="First and Last Name"
+                    required
                   >
                   <span class="icon is-small is-left">
                     <i class="mdi mdi-account"></i>
@@ -51,36 +53,39 @@
                 </div>
               </div>
               <div class="field">
-                <label class="label has-text-left">Email</label>
+                <label class="label has-text-left" for="contact-email">Email</label>
                 <div class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input is-primary" type="email" placeholder="Email" name="_replyto">
+                  <input class="input is-primary" type="email" placeholder="Email" name="_replyto" id="contact-email" required>
                   <span class="icon is-small is-left">
                     <i class="mdi mdi-email"></i>
                   </span>
                 </div>
               </div>
               <div class="field">
-                <label class="label has-text-left">Subject</label>
+                <label class="label has-text-left" for="contact-subject">Subject</label>
                 <div class="control">
                   <input
                     class="input is-primary"
                     type="text"
                     placeholder="e.g. Partnership opportunity"
                     name="subject"
+                    id="contact-subject"
+                    required
                   >
                 </div>
               </div>
               <div class="field">
-                <label class="label has-text-left">Inquiry</label>
+                <label class="label has-text-left" for="contact-inquiry">Inquiry</label>
                 <div class="control">
                   <textarea
                     class="textarea is-primary"
                     placeholder="Tell us about your creative project or company"
                     name="Services"
+                    id="contact-inquiry"
+                    required
                   ></textarea>
                 </div>
               </div>
-
               <div class="field">
                 <div class="control">
                   <app-button
