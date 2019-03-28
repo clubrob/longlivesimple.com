@@ -14,11 +14,9 @@
         <p class="subtitle has-text-centered">
           <nuxt-link
             :to="{path: '/about', hash: 'meetTheTeam'}"
-            v-scroll-to="{el: '#meetTheTeam'}"
           >Site Credits</nuxt-link>&nbsp;|
           <nuxt-link
             :to="{path: '/services', hash: 'testimonials'}"
-            v-scroll-to="{el: '#testimonials'}"
           >Testimonials</nuxt-link>
         </p>
       </div>

@@ -14,7 +14,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { name: 'p:domain_verify', content: '0cd0fe41522f11f3832a48db2f763668' }
     ],
     link: [
       {
@@ -43,19 +44,19 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: '~/plugins/carousel', ssr: false },
-    { src: '~/plugins/global-clickaway' }
-  ],
+  plugins: [{ src: '~/plugins/carousel', ssr: false }],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'
+    'nuxt-buefy',
+    '@nuxtjs/google-analytics'
   ],
-
+  googleAnalytics: {
+    id: 'UA-102222964-1'
+  },
   /*
    ** Build configuration
    */

@@ -292,7 +292,6 @@ export default {
       if (event.target !== this.$refs.navigationMenu) {
         if (!this.isInWhiteList(event.target)) this.localIsOpen = false;
       }
-      console.log(event.target);
     },
     isInWhiteList(el) {
       if (el === this.$refs.navigationMenu) return true;
@@ -318,9 +317,6 @@ export default {
 
       return false;
     }
-  },
-  mounted() {
-    console.log("mounted");
   },
   created() {
     if (typeof window !== "undefined") {

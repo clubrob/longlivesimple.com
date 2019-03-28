@@ -20,10 +20,12 @@ export default {
   },
   methods: {
     backTop: function() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return false;
+      if (typeof window !== "undefined") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
-  }
+  },
+  created() {}
 };
 </script>
 
