@@ -29,6 +29,11 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Montserrat';
+  font-display: auto;
+  src: local('Montserrat'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
 body {
   margin: 0;
   font-family: "Karla", sans-serif, Arial, sans-serif;

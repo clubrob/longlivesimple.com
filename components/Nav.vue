@@ -9,6 +9,7 @@
           viewBox="0 0 548 97"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          alt="Long Live Simple"
         >
           <path
             d="M44.478 96.5014L43.4852 95.7072C42.691 95.1115 24.8203 81.4107 19.062 75.4538C9.33244 65.1285 0 55.399 0 42.2938C0 19.062 19.8563 0 44.478 0C68.7027 0 88.3604 18.8634 88.3604 42.2938C88.3604 55.399 79.0279 65.1285 69.2984 75.4538C63.7386 81.4107 46.2651 95.1115 45.4708 95.7072L44.478 96.5014ZM44.478 3.57413C21.8419 3.57413 3.37556 21.0476 3.37556 42.4924C3.37556 54.2076 12.1123 63.54 21.4448 73.2696C26.2103 78.2337 40.3082 89.3532 44.2795 92.3316C48.2507 89.1546 61.9515 78.2337 66.717 73.2696C76.0495 63.54 84.7862 54.2076 84.7862 42.4924C84.9848 21.0476 66.717 3.57413 44.478 3.57413Z"
@@ -118,6 +119,7 @@
               viewBox="0 0 133 216"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              alt="Work"
             >
               <path
                 d="M82.5711 86.5602H62.619L63.5399 23.6342L87.7893 27.3177L82.5711 86.5602Z"
@@ -156,6 +158,7 @@
               viewBox="0 0 197 215"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              alt="About"
             >
               <path
                 d="M98.1488 85.5727L78.2126 65.6365L61.3435 62.8761L45.3945 77.9049L43.5543 88.9465L51.5288 103.669L99.069 156.73L98.4556 115.937L93.2415 114.71L85.5737 112.257L87.7207 92.627L98.1488 85.5727Z"
@@ -182,6 +185,7 @@
               viewBox="0 0 159 215"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              alt="Services"
             >
               <path
                 d="M126.382 30.4519H100.802C100.802 30.4519 106.588 6.3939 79.1801 7.00296C79.1801 7.00296 55.4266 5.78484 62.1263 33.8017L32.5868 30.4519V67.6047L130.037 65.473L126.382 30.4519ZM81.0073 34.7153C76.1348 34.7153 72.1759 30.7564 72.1759 25.8839C72.1759 21.0114 76.1348 17.0525 81.0073 17.0525C85.8798 17.0525 89.8387 21.0114 89.8387 25.8839C89.8387 30.7564 85.8798 34.7153 81.0073 34.7153Z"
@@ -212,6 +216,7 @@
               viewBox="0 0 162 215"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              alt="Contact"
             >
               <path
                 d="M128.938 132.087H29.3184V160.775H128.938V132.087Z"
@@ -318,8 +323,12 @@ export default {
   },
   created() {
     if (typeof window !== "undefined") {
-      document.documentElement.addEventListener("click", this.clickedOutside);
-      console.log(document.documentElement);
+      document.documentElement.addEventListener("click", this.clickedOutside, {passive: true});
+    }
+  },
+  beforeDestroy() {
+    if (typeof window !== "undefined") {
+      document.documentElement.removeEventListener("click", this.clickedOutside);
     }
   }
 };
@@ -391,7 +400,6 @@ export default {
   transform: translateX(-100%);
   opacity: 0;
   transition: all 150ms ease-in-out;
-  overflow-y: scroll;
 }
 @media screen and (min-width: 1088px) {
   .navbar-menu {

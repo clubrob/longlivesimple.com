@@ -173,13 +173,11 @@
             </div>
           </div>
           <div class="column">
-            <div class="field is-horizontal">
-              <form
-                action="https://longlivesimple.us14.list-manage.com/subscribe/post"
-                method="post"
-              >
+            <form action="https://longlivesimple.us14.list-manage.com/subscribe/post" method="post">
+              <div class="field is-horizontal">
                 <div class="field-body">
-                  <div class="field is-grouped">
+                  <div class="field">
+                    <label class="is-invisible" style="position: absolute; transform: translateX(-9000px);">Name</label>
                     <p class="control is-expanded has-icons-left">
                       <input class="input" type="text" placeholder="Name" name="u" value>
                       <span class="icon is-small is-left">
@@ -188,7 +186,8 @@
                     </p>
                   </div>
                   <div class="field">
-                    <p class="control is-expanded has-icons-left has-icons-right">
+                    <label class="is-invisible" style="position: absolute; transform: translateX(-9000px);">Email</label>
+                    <p class="control is-expanded has-icons-left">
                       <input class="input" type="email" placeholder="Email" name="id" value>
                       <span class="icon is-small is-left">
                         <i class="mdi mdi-email"></i>
@@ -196,23 +195,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="field is-horizontal">
-                  <div class="field-body">
-                    <div class="field">
-                      <div class="control" style="text-align: right; margin-top: 20px;">
-                        <app-button
-                          :isButton="contactButton.isButton"
-                          :buttonText="contactButton.text"
-                          :buttonUrl="contactButton.url"
-                          :buttonStyle="contactButton.style"
-                          :buttonType="contactButton.type"
-                        ></app-button>
-                      </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control has-text-right">
+                      <app-button
+                        :isButton="contactButton.isButton"
+                        :buttonText="contactButton.text"
+                        :buttonUrl="contactButton.url"
+                        :buttonStyle="contactButton.style"
+                        :buttonType="contactButton.type"
+                      ></app-button>
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

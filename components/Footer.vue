@@ -57,7 +57,7 @@
     </div>
     <ul>
       <li>
-        <img src="/img/icons/go-local.jpg" class="image is-64x64" alt="Go Local Here 2019">
+        <img src="/img/icons/go-local.jpg" class="image" alt="Go Local Here 2019" style="width: 64px; height: auto;">
       </li>
       <li>
         <img
