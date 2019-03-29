@@ -140,10 +140,6 @@ export default {
     height: 68px;
   }
 }
-.hero-background-image {
-  background: url("/img/CONTACT/CONTACT_hero.png") center;
-  background-size: cover;
-}
 .input.is-primary,
 textarea.is-primary {
   border-color: #dbdbdb;
