@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "name": "longlivesimple.com",
+  "alias": ["longlivesimple.com", "www.longlivesimple.com"],
   "builds": [
     {
       "src": "package.json",
