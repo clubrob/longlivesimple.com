@@ -85,11 +85,11 @@ import PortfolioBanner from "../components/PortfolioBanner";
 
 export default {
   components: { Backtowork, PortfolioBanner },
-  name: "Salon Etc.",
+  name: "SalonEtc",
   data: function() {
     return {
       salonBanner: {
-        title: "SalonEtc",
+        title: "Salon Etc.",
         subtitle:
           "Logo, Branding, Business Cards, Website Design, Newsletter Header",
         image: "/img/work/salon-etc/salon-banner.jpg"

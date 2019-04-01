@@ -116,7 +116,7 @@ export default {
       },
       salonCard: {
         route: "/salon-etc",
-        text: "Salon Etc",
+        text: "Salon Etc.",
         image: "/img/work/salon-cover.jpg"
       },
       chrisCard: {
